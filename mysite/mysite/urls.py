@@ -7,4 +7,5 @@ from django.conf import settings
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^polls/', include('polls.urls')),
+    url(r'^cards/', include('cards.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
